@@ -1,4 +1,4 @@
-import HttpClient  from "../Http/http-client";
+import HttpClient  from "../../Utils/Http/http-client";
 import { Service, Container } from "typedi";
 
 @Service({ global: true})  

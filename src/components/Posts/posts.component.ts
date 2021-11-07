@@ -1,9 +1,9 @@
-import { PostsService } from "../services/posts.service";
+import { PostsService } from "./posts.service";
 import { Service, Container } from 'typedi';
 import { PostView} from './post.view';
 
-@Service({ global: true })
-export class Posts {
+@Service()
+export class PostsComponent {
     posts!: Post[];
 
     constructor(private postsService: PostsService) {
