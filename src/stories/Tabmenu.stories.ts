@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createTabMenu, TabMenuProps } from './Tabmenu';
 
 export default {
-    title: 'Fitmail/Tabmenu',
+    title: 'Components / Menu / Tabs',
     argTypes: {
         tabs: {
             control: "array"
@@ -14,9 +14,9 @@ const Template: Story<TabMenuProps> = (tabMenu:TabMenuProps) => {
     return createTabMenu(tabMenu);
 };
 
-export const Default = Template.bind({});
+export const Tabsmenu = Template.bind({});
 
-Default.args = {
+Tabsmenu.args = {
     className: "tab-links",
     tabs: [
     {

@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createPost, PostProps } from './Post';
 
 export default {
-    title: 'Fitmail/Post',
+    title: 'Components / Posts / Post',
     argTypes: {
         goToPost: { action: 'goToPost' }
     }
