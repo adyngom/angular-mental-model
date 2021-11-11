@@ -1,0 +1,12 @@
+.email-header {
+    width: 100%;
+    display: flex;
+}
+.panel-title {
+    flex: 1;
+}
+.panel-tabs .tab-links {
+    width: 24rem;
+    display: flex;
+    justify-content: space-between; 
+}

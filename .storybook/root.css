@@ -19,3 +19,31 @@
     --primary-15: rgba(136, 108, 192, 0.15);
     --primary-15: rgba(255, 57, 75, 0.15);
   }
+
+  /** copied from normalize.css */
+  /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/**
+ * Remove the margin in all browsers.
+ */
+ body {
+  margin: 0;
+}
+
+/** end normalize.css */
+
+h1,h2,h3,h4,h5,h6, ul, ol, li, p, dl, dd, dt, blockquote, figure, pre, table, fieldset, form, legend, address, article, aside, footer, header, hgroup, nav, section, summary {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+}

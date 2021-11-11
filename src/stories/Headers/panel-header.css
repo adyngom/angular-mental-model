@@ -1,0 +1,4 @@
+.panel-header-title + .panel-header-subtitle {
+  margin-top: 0.625rem;
+  color: var(--secondary-text);
+}
