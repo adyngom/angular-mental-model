@@ -8,5 +8,6 @@ module.exports = {
     "@storybook/addon-essentials", 
     "@storybook/addon-viewport", 
     "@storybook/addon-notes"
-  ]
+  ],
+  
 }
