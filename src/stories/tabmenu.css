@@ -7,3 +7,20 @@
     align-items: flex-start;
     max-width: 24rem;
 }
+
+.tab-links .tab {
+    font-size: 1rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 2px solid transparent;
+}
+.tab-links .tab.selected {
+    border-bottom: 2px solid var(--primary);
+}
+
+.tab-links .tab a {
+    color: var(--secondary-text);
+}
+
+.tab-links .tab.selected a {
+    color: var(--primary);
+}
