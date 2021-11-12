@@ -30,6 +30,7 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
+    "@stencil/core": "2.10.0",
     "axios": "^0.24.0"
   }
 }
