@@ -1,0 +1,17 @@
+{
+  "plugins": [],
+  "projects": [
+    "618a8cbe18fcb6ba4785ea7f"
+  ],
+  "components": [
+    {
+      "path": "src/stories/Tabmenu.stories.ts",
+      "zeplinIds": [
+        "618b40b3096e4ea989b354d4"
+      ]
+    }
+  ],
+  "github": {
+    "repository": "adyngom/angular-mental-model"
+  }
+}

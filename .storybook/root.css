@@ -1,0 +1,49 @@
+:root {
+    --primary: #ff394b;
+    --tertiary: #ff73bf;
+    --blue: #2251f8;
+    --tertiary-text: #d7d7d7;
+    --secondary-text: #717579;
+    --secondary: #b289ff;
+    --primary-text: #000041;
+    --primary-highligt: #ffeef0;
+    --light: #eee;
+    --background: #fbfbfb;
+    --green: #09bd3c;
+    --white: #fff;
+    --red: #fc2e53;
+    --dark-01: #161717;
+    --dark-03: #2b2b2b;
+    --white-20: rgba(255, 255, 255, 0.2);
+    --dark-02: #202020;
+    --primary-15: rgba(136, 108, 192, 0.15);
+    --primary-15: rgba(255, 57, 75, 0.15);
+  }
+
+  /** copied from normalize.css */
+  /**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/**
+ * Remove the margin in all browsers.
+ */
+ body {
+  margin: 0;
+}
+
+/** end normalize.css */
+
+h1,h2,h3,h4,h5,h6, ul, ol, li, p, dl, dd, dt, blockquote, figure, pre, table, fieldset, form, legend, address, article, aside, footer, header, hgroup, nav, section, summary {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, ol {
+    list-style: none;
+}

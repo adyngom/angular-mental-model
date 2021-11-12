@@ -1,15 +1,15 @@
 import 'reflect-metadata';
-import { Container } from 'typedi';
-import { PostsComponent } from './components/Posts/posts.component';
+import { PanelHeaderComponent } from './components/PanelHeader/PanelHeader';
 import { render } from "./Utils";
 import "./style.css";
 
 (async function(document) {
-    const posts = Container.get(PostsComponent);
+    const panelHeader = new PanelHeaderComponent({title: "Recent Emails", subtitle: "Lorem ipsum dolor sit amet"});
 
-    let appPosts = await posts.init();
+    let appHeader = panelHeader.getPanelHeader();
 
-    render(appPosts, document.getElementById("app"));
+    render(appHeader, document.getElementById("header"));
+   
 
 })(document);
 
