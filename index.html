@@ -6,9 +6,12 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
+  <script type="module" src="./node_modules/fitmail/dist/fitmail/index.esm.js"></script>
+  <script nomodule src="./node_modules/fitmail/dist/fitmail/index.js"></script>
 </head>
 
 <body>
+  <panel-header headerTitle="header title"></panel-header>
   <div id="header"></div>
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
