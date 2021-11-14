@@ -5,13 +5,17 @@ import * as TabsMenuStories from '../../Tabmenu.stories';
 
 export default {
     title: 'Components/EmailHeader',
+    argTypes: {
+        header: {},
+        tabMenu: {},
+    },
 } as Meta;
 
 const Template: Story<EmailHeaderProps> = (args) => createEmailHeader(args);
 
-export const Default = Template.bind({});
+export const Default: Story<EmailHeaderProps> = Template.bind({});
 
 Default.args = {
-    header: PanelsHeaderStories.WithSubtitle.args,
-    tabMenu: TabsMenuStories.Tabsmenu.args
+    header: { title: 'Recent emails', subtitle: 'You have 5 new emails' },
+    tabMenu: {className: 'tab-links', tabs: TabsMenuStories.Tabsmenu.args.tabs},
 };

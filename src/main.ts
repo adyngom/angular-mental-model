@@ -8,8 +8,7 @@ import "./style.css";
 
     let appHeader = panelHeader.getPanelHeader();
 
-    render(appHeader, document.getElementById("header"));
+    render(appHeader, "#app");
    
-
 })(document);
 
