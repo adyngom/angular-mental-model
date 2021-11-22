@@ -4,7 +4,7 @@ import * as PanelsHeaderStories from '../../Headers/PanelHeader.stories';
 import * as TabsMenuStories from '../../Tabmenu.stories';
 
 export default {
-    title: 'Components/EmailHeader',
+    title: 'Molecules/EmailHeader',
     argTypes: {
         header: {},
         tabMenu: {},

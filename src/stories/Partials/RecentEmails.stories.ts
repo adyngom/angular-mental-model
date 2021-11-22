@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createRecentEmails, RecentEmailsProps } from './RecentEmails';
 
 export default {
-    title: 'Partials/Recent Emails'
+    title: 'Organisms/Recent Emails'
 } as Meta;
 
 const tabs =  [

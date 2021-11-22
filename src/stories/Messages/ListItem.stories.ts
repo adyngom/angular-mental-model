@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { MessageListItemProps, createMessageListItem } from './ListItem';
 
 export default {
-    title: 'Atomic Elements/Messages'
+    title: 'Molecules/Messages'
 } as Meta;
 
 const Template: Story<MessageListItemProps> = (args: MessageListItemProps) => createMessageListItem(args);

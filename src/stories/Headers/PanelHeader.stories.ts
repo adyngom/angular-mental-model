@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { PanelHeaderProps, createPanelHeader } from "./PanelHeader";
 
 export default {
-    title: 'Atomic Elements/Headers/PanelHeader'
+    title: 'Atoms/Headers'
 } as Meta;
 
 const Template: Story<PanelHeaderProps> = (args: PanelHeaderProps) => createPanelHeader(args);

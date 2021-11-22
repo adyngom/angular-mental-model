@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createTabMenu, TabMenuProps } from './Tabmenu';
 
 export default {
-    title: 'Components / Menu / Tabs',
+    title: 'Molecules / Menu / Tabs',
     argTypes: {
         tabs: {
             control: "array"

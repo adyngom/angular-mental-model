@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/html';
 import { createPost, PostProps } from './Post';
 
 export default {
-    title: 'Components / Posts / Post',
+    title: 'Example / Posts / Post',
     argTypes: {
         goToPost: { action: 'goToPost' }
     }
