@@ -5,7 +5,7 @@ export default {
     title: 'Atoms/Button',
     argTypes: {
         label: { control: 'text' },
-        level: { control: 'text'},
+        level: { type: 'select', options: ['primary', 'secondary', 'tertiary'] },
         size: { 
             control: { type: 'select'},
             options: ['small', 'medium', 'large'] ,

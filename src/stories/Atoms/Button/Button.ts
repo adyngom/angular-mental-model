@@ -14,7 +14,7 @@ export interface ButtonProps {
 }
 
 export const createButton = ({
-    label,
+    label = 'Button',
     level = 'primary',
     size = 'medium',
     type = 'button',
@@ -28,7 +28,7 @@ export const createButton = ({
     const button = document.createElement('button');
     button.classList.add(`btn`, `btn-${level}`, `btn-${size}`, `font-medium`);
     if (disabled) {
-        button.classList.add('disabled');
+        button.classList.add('btn-disabled');
         button.setAttribute('disabled', 'disabled');
     }
     if (withSmallIcon) {
