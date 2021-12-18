@@ -1,19 +1,8 @@
 interface Animal {
-    name?: string;
-    family?: string;
+    name?: 'Humanidae' | 'Canidae' | 'Felidae' | 'Carnivora' | 'Piscivora' | 'Cetacea' | 'Aves' | 'Mammalia' | 'Reptilia' | 'Amphibia' | 'Arachnida' | 'Insecta' | 'Arthropoda' | 'Plantae' | 'Fungi' | 'Protozoa' | 'Chromista' | 'Bacteria' | 'Viruses' | 'Plasmids' | 'Eukaryota' | 'Archaea' | 'Euarchaea' | 'Euryarchaea' | 'Euryalialia' | 'Euryale' | 'Euryalea' | 'Euryalea_cinerea' | 'Euryalea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea_cinerea' | 'Euryalea_c
+    family?: 'Mammal' | 'Bird' | 'Reptile' | 'Fish' | 'Amphibian' | 'Insect' | 'Arachnid' | 'Mollusc' | 'Crustacean' | 'Invertebrate' | 'Plant';
     isEndangered?: boolean;
     isExtinct?: boolean;
-    isMammal?: boolean;
-    isReptile?: boolean;
-    isAmphibian?: boolean;
-    isBird?: boolean;
-    isFish?: boolean;
-    isInsect?: boolean;
-    isArthropod?: boolean;
-    isMollusk?: boolean;
-    isCrustacean?: boolean;
-    isInvertebrate?: boolean;
-    isVertebrate?: boolean;
     hasHorns?: boolean;
     hasTail?: boolean;
     hasLegs?: boolean;
@@ -28,17 +17,6 @@ const SpeciesConfig: Animal = {
     name: undefined,
     isEndangered: undefined,
     isExtinct: undefined,
-    isMammal: undefined,
-    isReptile: undefined,
-    isAmphibian: undefined,
-    isBird: undefined,
-    isFish: undefined,
-    isInsect: undefined,
-    isArthropod: undefined,
-    isMollusk: undefined,
-    isCrustacean: undefined,
-    isInvertebrate: undefined,
-    isVertebrate: undefined,
     hasHorns: undefined,
     hasTail: undefined,
     hasLegs: undefined,
@@ -57,6 +35,20 @@ function Species(config: Animal) {
     }
     return function (target: any) {
         console.log(`Here is the ${_config.name} species class definition: \n\n${target}`);
+
+        Object.defineProperty(target.prototype, 'type', {
+            get: function () {
+                return _config.name;
+            }
+        });
+
+        Object.defineProperty(target.prototype, 'model', {
+            value: Object.freeze(_config),
+            writable: false,
+            enumerable: false,
+            configurable: false
+        });
+
     }
 }
 
