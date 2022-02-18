@@ -30,6 +30,7 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
+    "animal-society": "^1.0.0",
     "axios": "^0.24.0"
   }
 }
